@@ -15,8 +15,11 @@ power$datetime <- strptime(paste(power$Date, power$Time, sep=" "),
                            format = "%d/%m/%Y %H:%M:%S")
 
 ## PLOTTING DATA
+## NOTE:  I decided to keep the white background for my plots
+## because it is more comfortable to read and this is how they are shown on the project page
+
 ## Plot the 3 Sub metering variables over datetime in separate colors
-png(file = "plot3.png", bg = "transparent")
+png(file = "plot3.png")
 with(power, plot(datetime, Sub_metering_1, type = "l", 
      ylab = "Energy sub metering", xlab = ""))
 with(power, lines(datetime, Sub_metering_2, col = "red"))

@@ -15,9 +15,11 @@ power$datetime <- strptime(paste(power$Date, power$Time, sep=" "),
                            format = "%d/%m/%Y %H:%M:%S")
 
 ## PLOTTING DATA
-## Initialize png graphic device with transparent background
-## Split it into 2 rows and 2 columns
-png(file = "plot4.png", bg = "transparent")
+## NOTE:  I decided to keep the white background for my plots
+## because it is more comfortable to read and this is how they are shown on the project page
+
+## Initialize png graphic device split into 2 rows and 2 columns
+png(file = "plot4.png")
 par(mfrow=c(2,2))
 
 ## Plot 1 of 4: Global active power by date and time

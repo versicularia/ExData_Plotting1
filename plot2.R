@@ -15,8 +15,11 @@ power$datetime <- strptime(paste(power$Date, power$Time, sep=" "),
                            format = "%d/%m/%Y %H:%M:%S")
 
 ## PLOTTING DATA
+## NOTE:  I decided to keep the white background for my plots
+## because it is more comfortable to read and this is how they are shown on the project page
+
 ## Plot Global_active_power over datetime in a png file
-png(file = "plot2.png", bg = "transparent")
+png(file = "plot2.png")
 with(power, plot(datetime, Global_active_power, type = "l", 
      ylab = "Global Active Power (kilowatts)", xlab = ""))
 dev.off()
