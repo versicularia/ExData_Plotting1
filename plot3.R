@@ -19,6 +19,7 @@ power$datetime <- strptime(paste(power$Date, power$Time, sep=" "),
 ## because it is more comfortable to read and this is how they are shown on the project page
 
 ## Plot the 3 Sub metering variables over datetime in separate colors
+## The bg is white and size is 480x480px by the default settings
 png(file = "plot3.png")
 with(power, plot(datetime, Sub_metering_1, type = "l", 
      ylab = "Energy sub metering", xlab = ""))

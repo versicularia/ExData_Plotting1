@@ -19,6 +19,7 @@ power$datetime <- strptime(paste(power$Date, power$Time, sep=" "),
 ## because it is more comfortable to read and this is how they are shown on the project page
 
 ## Create a histogram of Global active power in a png file
+## The bg is white and size is 480x480px by the default settings
 png(file = "plot1.png")
 hist(power$Global_active_power, 
      xlab = "Global Active Power (kilowatts)", 

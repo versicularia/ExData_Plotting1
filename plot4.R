@@ -19,6 +19,7 @@ power$datetime <- strptime(paste(power$Date, power$Time, sep=" "),
 ## because it is more comfortable to read and this is how they are shown on the project page
 
 ## Initialize png graphic device split into 2 rows and 2 columns
+## The bg is white and size is 480x480px by the default settings
 png(file = "plot4.png")
 par(mfrow=c(2,2))
 
